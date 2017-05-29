@@ -30,5 +30,9 @@ function verify(credentials) {
     };
 
     // if the request succeeds, we can assume the api key is valid
-    return request.get(requestOptions);
+    return rq(requestOptions).then(function (response) {
+        return cb(null, {verified: true});
+    }).catch(function (err) {
+        return cb(err);
+    });
 }
