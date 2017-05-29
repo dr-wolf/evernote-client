@@ -1,4 +1,6 @@
 "use strict";
+var Evernote = require('evernote');
+
 module.exports = verify;
 
 function verify(credentials, cb) {
