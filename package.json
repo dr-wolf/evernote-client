@@ -6,9 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dr.Wolf",
+  "author": "roman",
   "license": "ISC",
   "dependencies": {
-    "evernote": "^2.0.1-beta"
+    "evernote": "^2.0.1-beta",
+    "elasticio-node": "0.0.7",
+    "elasticio-sailor-nodejs": "2.0.1"
   }
 }
