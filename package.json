@@ -1,16 +1,26 @@
 {
-  "name": "evernote-client",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@elasticio/evernote-component-nodejs",
+  "version": "0.0.1",
+  "description": "elastic.io component for the Evernote API",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 0"
   },
-  "author": "roman",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:elasticio/evernote-component-nodejs.git"
+  },
+  "author": "elastic.io GmbH",
+  "license": "BSD-2-Clause",
+  "engines": {
+    "node": "6.4.0"
+  },
   "dependencies": {
-    "evernote": "^2.0.1-beta",
+    "co": "4.6.0",
     "elasticio-node": "0.0.7",
-    "elasticio-sailor-nodejs": "2.0.1"
+    "q": "^1.4.1",
+    "elasticio-sailor-nodejs": "2.0.1",
+    "query-string": "^4.3.4",
+    "request": "^2.76.0",
+    "request-promise": "^4.1.1"
   }
 }
