@@ -20,13 +20,13 @@
         "notebookGuid": {
           "label": "Notebook GUID",
           "required": false,
-          "viewClass": "TextField",
+          "viewClass": "TextFieldView",
           "prompt": "Notebook GUID to take notes from it"
         },
         "searchQuery": {
           "label": "Search query",
           "required": false,
-          "viewClass": "TextField",
+          "viewClass": "TextFieldView",
           "prompt": "Find notes with this text"
         }
       },
@@ -58,7 +58,7 @@
         "notebookGuid": {
           "label": "Notebook GUID",
           "required": false,
-          "viewClass": "TextField",
+          "viewClass": "TextFieldView",
           "prompt": "Notebook GUID to create note in, if not specified default notebook will be used"
         }
       },
@@ -74,7 +74,7 @@
         "notebookGuid": {
           "label": "Parent tag GUID",
           "required": false,
-          "viewClass": "TextField",
+          "viewClass": "TextFieldView",
           "prompt": "Parent tag GUID, is taken from msg body if not specified"
         }
       },
@@ -90,7 +90,7 @@
         "tagGuid": {
           "label": "Tag GUID",
           "required": false,
-          "viewClass": "TextField",
+          "viewClass": "TextFieldView",
           "prompt": "Tag GUID, is taken from msg body if not specified"
         }
       },
