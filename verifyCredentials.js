@@ -22,7 +22,7 @@ function verify(credentials) {
 
     // sending a request to the most simple endpoint of the target API
     const requestOptions = {
-        uri: 'https://petstore.elastic.io/v2/user/me',
+        uri: 'https://sandbox.evernote.com/shard/s1/notestore',
         headers: {
             'api-key': apiKey
         },
