@@ -14,7 +14,7 @@
   },
   "triggers": {
     "findNotes": {
-      "main": "./lib/actions/create-note.js",
+      "main": "./lib/triggers/create-note.js",
       "title": "Find notes by notebook GUID and text",
       "type": "polling",
       "fields": {
@@ -46,7 +46,7 @@
   },
   "actions": {
     "createNotebook": {
-      "main": "./lib/actions/create-notebook.js",
+      "main": "./lib/triggers/create-notebook.js",
       "title": "Create a Notebook",
       "metadata": {
         "in": "./lib/schemas/notebook.json",
