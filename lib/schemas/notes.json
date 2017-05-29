@@ -10,7 +10,7 @@
       },
       "title": {
         "type": "string",
-        "required": true,
+        "required": false,
         "title": "Title"
       },
       "notebookGuid": {
