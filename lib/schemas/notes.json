@@ -1,23 +1,31 @@
 {
-  "type": "array",
+  "type": "object",
   "properties": {
-    "type": "object",
-    "properties": {
-      "guid": {
-        "type": "string",
-        "required": false,
-        "title": "GUID"
-      },
-      "title": {
-        "type": "string",
-        "required": true,
-        "title": "Title"
-      },
-      "notebookGuid": {
-        "type": "string",
-        "required": false,
-        "title": "Notebook GUID"
+    "notes": {
+      "type": "array",
+      "properties": {
+        "type": "object",
+        "properties": {
+          "guid": {
+            "type": "string",
+            "required": false,
+            "title": "GUID"
+          },
+          "title": {
+            "type": "string",
+            "required": true,
+            "title": "Title"
+          },
+          "notebookGuid": {
+            "type": "string",
+            "required": false,
+            "title": "Notebook GUID"
+          }
+        }
       }
     }
   }
 }
+
+
+
