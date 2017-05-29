@@ -14,7 +14,7 @@
   },
   "triggers": {
     "findNotes": {
-      "main": "./lib/triggers/create-note.js",
+      "main": "./lib/triggers/find-notes.js",
       "title": "Find notes by notebook GUID and text",
       "type": "polling",
       "fields": {
@@ -36,7 +36,7 @@
       }
     },
     "getTags": {
-      "main": "./lib/actions/get-tags.js",
+      "main": "./lib/triggers/get-tags.js",
       "title": "Get all tags",
       "type": "polling",
       "metadata": {
@@ -46,7 +46,7 @@
   },
   "actions": {
     "createNotebook": {
-      "main": "./lib/triggers/create-notebook.js",
+      "main": "./lib/actions/create-notebook.js",
       "title": "Create a Notebook",
       "metadata": {
         "in": "./lib/schemas/notebook.json",
