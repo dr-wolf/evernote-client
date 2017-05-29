@@ -1,93 +1,102 @@
 {
-  "title": "Petstore API (Node.js)",
-  "description": "elastic.io component for the Petstore API",
-  "docsUrl": "https://github.com/elasticio/petstore-component-nodejs",
+  "title": "Evernote API (Node.js)",
+  "description": "elastic.io component for the Evernote API",
+  "docsUrl": "https://example.com/",
   "credentials": {
     "fields": {
       "apiKey": {
         "label": "API key",
         "required": true,
         "viewClass": "TextFieldWithNoteView",
-        "note": "Please use <b>elasticio</b> as API key. For more details see <a href='https://petstore.elastic.io/docs/' target='_blank'>Petstore API docs</a>."
+        "note": "Api key for evernote, will be replaced with OAuth 1"
       }
     }
   },
   "triggers": {
-    "getPetsByStatusWithGenerators": {
-      "main": "./lib/triggers/getPetsByStatusWithGenerators.js",
-      "type": "polling",
-      "title": "Get Pets By Status With Generators",
+    "findNotes": {
+      "main": "./lib/actions/create-note.js",
+      "title": "Find notes by notebook GUID and text",
       "fields": {
-        "status": {
-          "label": "Pet Status",
-          "required": true,
-          "viewClass": "SelectView",
-          "model": {
-            "available": "Available",
-            "pending": "Pending",
-            "sold": "Sold"
-          },
-          "prompt": "Select Pet Status"
+        "notebookGuid": {
+          "label": "Notebook GUID",
+          "required": false,
+          "viewClass": "TextField",
+          "prompt": "Notebook GUID to take notes from it"
+        },
+        "searchQuery": {
+          "label": "Search query",
+          "required": false,
+          "viewClass": "TextField",
+          "prompt": "Find notes with this text"
         }
       },
       "metadata": {
-        "out": "./lib/schemas/getPetsByStatus.out.json"
+        "out": "./lib/schemas/notes.json"
       }
     },
-    "getPetsByStatusWithPromises": {
-      "main": "./lib/triggers/getPetsByStatusWithPromises.js",
-      "type": "polling",
-      "title": "Get Pets By Status With Promises",
-      "fields": {
-        "status": {
-          "label": "Pet Status",
-          "required": true,
-          "viewClass": "SelectView",
-          "model": {
-            "available": "Available",
-            "pending": "Pending",
-            "sold": "Sold"
-          },
-          "prompt": "Select Pet Status"
-        }
-      },
+    "getTags": {
+      "main": "./lib/actions/get-tags.js",
+      "title": "Get all tags",
       "metadata": {
-        "out": "./lib/schemas/getPetsByStatus.out.json"
-      }
-    },
-    "getPetsByStatusWithDynamicSelectModel": {
-      "main": "./lib/triggers/getPetsByStatusWithDynamicSelectModel.js",
-      "type": "polling",
-      "title": "Get Pets By Status With Dynamic Select Model",
-      "fields": {
-        "status": {
-          "label": "Pet Status",
-          "required": true,
-          "viewClass": "SelectView",
-          "model": "getStatusModel",
-          "prompt": "Select Pet Status"
-        }
-      },
-      "metadata": {
-        "out": "./lib/schemas/getPetsByStatus.out.json"
+        "out": "./lib/schemas/tags.json"
       }
     }
   },
   "actions": {
-    "createPetWithPromise": {
-      "main": "./lib/actions/createPetWithPromise.js",
-      "title": "Create a Pet With Promise",
+    "createNotebook": {
+      "main": "./lib/actions/create-notebook.js",
+      "title": "Create a Notebook",
       "metadata": {
-        "in": "./lib/schemas/createPet.in.json",
-        "out": "./lib/schemas/createPet.out.json"
+        "in": "./lib/schemas/notebook.json",
+        "out": "./lib/schemas/notebook.json"
       }
     },
-    "createPetWithGenerators": {
-      "main": "./lib/actions/createPetWithGenerators.js",
-      "title": "Create a Pet With Generators",
+    "createNote": {
+      "main": "./lib/actions/create-note.js",
+      "title": "Create a Note in notebook",
+      "fields": {
+        "notebookGuid": {
+          "label": "Notebook GUID",
+          "required": false,
+          "viewClass": "TextField",
+          "prompt": "Notebook GUID to create note in, if not specified default notebook will be used"
+        }
+      },
       "metadata": {
-        "in": "./lib/schemas/createPet.in.json",
-        "out": "./lib/schemas/createPet.out.json"
+        "in": "./lib/schemas/note.json",
+        "out": "./lib/schemas/note.json"
+      }
+    },
+    "createTag": {
+      "main": "./lib/actions/create-tag.js",
+      "title": "Create a Tag",
+      "fields": {
+        "notebookGuid": {
+          "label": "Parent tag GUID",
+          "required": false,
+          "viewClass": "TextField",
+          "prompt": "Parent tag GUID, is taken from msg body if not specified"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/tag.json",
+        "out": "./lib/schemas/tag.json"
+      }
+    },
+    "tagNote": {
+      "main": "./lib/actions/tag-note.js",
+      "title": "Puts a tag on a note",
+      "fields": {
+        "tagGuid": {
+          "label": "Tag GUID",
+          "required": false,
+          "viewClass": "TextField",
+          "prompt": "Tag GUID, is taken from msg body if not specified"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/tag-note.in.json",
+        "out": "./lib/schemas/note.json"
       }
     }
   }

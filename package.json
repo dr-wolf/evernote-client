@@ -1,24 +1,14 @@
 {
-    "name": "@elasticio/petstore-component-nodejs",
-    "version": "0.0.1",
-    "description": "elastic.io component for the Petstore API",
-    "scripts": {
-        "test": "exit 0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:elasticio/petstore-component-nodejs.git"
-    },
-    "author": "elastic.io GmbH",
-    "license": "BSD-2-Clause",
-    "engines": {
-        "node": "6.4.0"
-    },
-    "dependencies": {
-        "elasticio-sailor-nodejs": "2.1.0",
-        "elasticio-node": "0.0.7",
-        "co": "4.6.0",
-        "request": "2.76.0",
-        "request-promise": "4.1.1"
-    }
+  "name": "evernote-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dr.Wolf",
+  "license": "ISC",
+  "dependencies": {
+    "evernote": "^2.0.1-beta"
+  }
 }

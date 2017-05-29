@@ -1,15 +1,15 @@
 {
   "type": "object",
   "properties": {
-    "name": {
+    "noteGuid": {
       "type": "string",
       "required": true,
-      "title": "Name"
+      "title": "Note GUID"
     },
-    "status": {
+    "tagGuid": {
       "type": "string",
-      "required": true,
-      "title": "Status"
+      "required": false,
+      "title": "Tag GUID"
     }
   }
 }
