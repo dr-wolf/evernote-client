@@ -16,6 +16,7 @@
     "findNotes": {
       "main": "./lib/actions/create-note.js",
       "title": "Find notes by notebook GUID and text",
+      "type": "polling",
       "fields": {
         "notebookGuid": {
           "label": "Notebook GUID",
@@ -37,6 +38,7 @@
     "getTags": {
       "main": "./lib/actions/get-tags.js",
       "title": "Get all tags",
+      "type": "polling",
       "metadata": {
         "out": "./lib/schemas/tags.json"
       }
