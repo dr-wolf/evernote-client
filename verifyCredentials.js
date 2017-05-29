@@ -24,7 +24,7 @@ function verify(credentials) {
     const requestOptions = {
         uri: 'https://sandbox.evernote.com/shard/s1/notestore',
         headers: {
-            'api-key': apiKey
+            'oauth_token': apiKey
         },
         json: true
     };
