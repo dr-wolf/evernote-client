@@ -8,7 +8,7 @@
         "label": "API key",
         "required": true,
         "viewClass": "TextFieldWithNoteView",
-        "note": "Api key for evernote, will be replaced with OAuth 1"
+        "note": "Api key for evernote, will be replaced with OAuth 1 in future"
       }
     }
   },
