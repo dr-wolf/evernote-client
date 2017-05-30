@@ -108,6 +108,14 @@
         "in": "./lib/schemas/find-notes.in.json",
         "out": "./lib/schemas/note.json"
       }
+    },
+    "appendNote": {
+      "main": "./lib/actions/find-notes.js",
+      "title": "Appends note with text",
+      "metadata": {
+        "in": "./lib/schemas/append-note.in.json",
+        "out": "./lib/schemas/note.json"
+      }
     }
   }
 }
