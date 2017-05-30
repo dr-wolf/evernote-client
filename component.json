@@ -54,7 +54,7 @@
       }
     },
     "createNote": {
-      "main": "./lib/actions/create-tag.js",
+      "main": "./lib/actions/create-note.js",
       "title": "Create a Note in notebook",
       "fields": {
         "notebookGuid": {
@@ -65,8 +65,8 @@
         }
       },
       "metadata": {
-        "in": "./lib/schemas/note.json",
-        "out": "./lib/schemas/note.json"
+        "in": "./lib/schemas/tag.json",
+        "out": "./lib/schemas/tag.json"
       }
     },
     "createTag": {
