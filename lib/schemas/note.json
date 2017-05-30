@@ -25,22 +25,6 @@
       "type": "string",
       "required": false,
       "title": "Content"
-    },
-    "tagGuids": {
-      "type": "array",
-      "required": false,
-      "title": "Tag GUID's",
-      "properties": {
-        "type": "string"
-      }
-    },
-    "tagNames": {
-      "type": "array",
-      "required": false,
-      "title": "Tag names",
-      "properties": {
-        "type": "string"
-      }
     }
   }
 }

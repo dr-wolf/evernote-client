@@ -65,8 +65,8 @@
         }
       },
       "metadata": {
-        "in": "./lib/schemas/tag.json",
-        "out": "./lib/schemas/tag.json"
+        "in": "./lib/schemas/note.json",
+        "out": "./lib/schemas/note.json"
       }
     },
     "createTag": {
