@@ -56,7 +56,14 @@
     "createNote": {
       "main": "./lib/actions/create-note.js",
       "title": "Create a Note in notebook",
-
+      "fields": {
+        "notebookGuid": {
+          "label": "Notebook GUID",
+          "required": false,
+          "viewClass": "TextFieldView",
+          "prompt": "Notebook GUID to create note in, if not specified default notebook will be used"
+        }
+      },
       "metadata": {
         "in": "./lib/schemas/note.json",
         "out": "./lib/schemas/note.json"
