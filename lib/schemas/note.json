@@ -11,11 +11,6 @@
       "required": true,
       "title": "Title"
     },
-    "body": {
-      "type": "string",
-      "required": true,
-      "title": "Body"
-    },
     "notebookGuid": {
       "type": "string",
       "required": false,

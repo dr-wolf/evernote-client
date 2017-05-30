@@ -55,7 +55,7 @@
     },
     "createNote": {
       "main": "./lib/actions/create-note.js",
-      "title": "Create a Note in notebook test3",
+      "title": "Create a Note in notebook",
       "fields": {
         "notebookGuid": {
           "label": "Notebook GUID",
