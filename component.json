@@ -53,6 +53,22 @@
         "out": "./lib/schemas/notebook.json"
       }
     },
+    "createNote": {
+      "main": "./lib/actions/create-tag.js",
+      "title": "Create a Note in notebook",
+      "fields": {
+        "notebookGuid": {
+          "label": "Notebook GUID",
+          "required": false,
+          "viewClass": "TextFieldView",
+          "prompt": "Notebook GUID to create note in, if not specified default notebook will be used"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/note.json",
+        "out": "./lib/schemas/note.json"
+      }
+    },
     "createTag": {
       "main": "./lib/actions/create-tag.js",
       "title": "Create a Tag",
@@ -82,14 +98,6 @@
       },
       "metadata": {
         "in": "./lib/schemas/tag-note.in.json",
-        "out": "./lib/schemas/note.json"
-      }
-    },
-    "createNoteInNotebook": {
-      "main": "./lib/actions/create-note.js",
-      "title": "Creates new note",
-      "metadata": {
-        "in": "./lib/schemas/note.json",
         "out": "./lib/schemas/note.json"
       }
     }
