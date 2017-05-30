@@ -1,22 +1,27 @@
 {
-  "type": "array",
+  "type": "object",
   "properties": {
-    "type": "object",
-    "properties": {
-      "guid": {
-        "type": "string",
-        "required": false,
-        "title": "GUID"
-      },
-      "name": {
-        "type": "string",
-        "required": true,
-        "title": "Name"
-      },
-      "tagGuid": {
-        "type": "string",
-        "required": false,
-        "title": "Parent tag GUID"
+    "tags": {
+      "type": "array",
+      "properties": {
+        "type": "object",
+        "properties": {
+          "guid": {
+            "type": "string",
+            "required": false,
+            "title": "GUID"
+          },
+          "name": {
+            "type": "string",
+            "required": true,
+            "title": "Name"
+          },
+          "tagGuid": {
+            "type": "string",
+            "required": false,
+            "title": "Parent tag GUID"
+          }
+        }
       }
     }
   }
