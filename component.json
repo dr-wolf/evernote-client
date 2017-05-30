@@ -85,7 +85,7 @@
         "out": "./lib/schemas/note.json"
       }
     },
-    "createNote": {
+    "createNoteInNotebook": {
       "main": "./lib/actions/create-note.js",
       "title": "Creates new note",
       "metadata": {
