@@ -20,6 +20,16 @@
       "type": "string",
       "required": false,
       "title": "Content"
+    },
+    "tagGuids": {
+      "type": "array",
+      "required": false,
+      "title": "Tag GUIDs"
+    },
+    "tagNames": {
+      "type": "array",
+      "required": false,
+      "title": "Tag names"
     }
   }
 }

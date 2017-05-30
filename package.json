@@ -20,8 +20,6 @@
     "elasticio-sailor-nodejs": "2.0.1",
     "evernote": "^2.0.1-beta",
     "q": "^1.4.1",
-    "query-string": "^4.3.4",
-    "request": "^2.76.0",
-    "request-promise": "^4.1.1"
+    "xml2js": "^0.4.17"
   }
 }

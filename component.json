@@ -100,7 +100,14 @@
         "in": "./lib/schemas/tag-note.in.json",
         "out": "./lib/schemas/note.json"
       }
+    },
+    "findNotes": {
+      "main": "./lib/actions/find-notes.js",
+      "title": "Finds notes by notebok guid and query",
+      "metadata": {
+        "in": "./lib/schemas/find-notes.in.json",
+        "out": "./lib/schemas/note.json"
+      }
     }
-
   }
 }

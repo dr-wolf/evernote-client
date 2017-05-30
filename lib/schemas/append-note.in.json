@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "guid": {
+      "type": "string",
+      "required": true,
+      "title": "GUID"
+    },
+    "content": {
+      "type": "string",
+      "required": true,
+      "title": "Content"
+    }
+  }
+}
