@@ -1,2 +1,2 @@
 # evernote-client
-Evernote SDK NodeJS helper
+Evernote SDK NodeJS elastic.io wrapper.
